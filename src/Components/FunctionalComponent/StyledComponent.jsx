@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import abstract from '../../Image/abstract-1278077_1280.webp'
 import analytics from '../../Image/analytics-3088958_1280.webp'
 import digital from '../../Image/digital-1742687_1280.webp'
+import FEimg from '../../Image/FE img.jpg'
+import img5 from '../../Image/img5.jpg'
+import img6 from '../../Image/img6.jpg'
 
 const Container = styled.div`
   max-width: 1200px;
@@ -62,14 +65,16 @@ const HeroTitle = styled.h2`
 const HeroButton = styled.button`
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #333;
+   background-color: #333;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 
   &:hover {
-    background-color: #555;
+    background-color: #08a0ecba;
+    color: #000000;
+    border-radius: 10px;
   }
 `;
 
@@ -115,6 +120,7 @@ function StyledComponent(){
           <NavItem href="#">Home</NavItem>
           <NavItem href="#">Products</NavItem>
           <NavItem href="#">Cart</NavItem>
+          <NavItem href="#">Contact Us</NavItem>
         </Nav>
       </Header>
   
@@ -140,7 +146,25 @@ function StyledComponent(){
         <ProductCard>
           <ProductImage src={digital} alt="Product 3" />
           <ProductTitle>Product 3</ProductTitle>
-          <ProductPrice>$14.99</ProductPrice>
+          <ProductPrice>$28.99</ProductPrice>
+          <HeroButton>Shop Now</HeroButton>
+        </ProductCard>
+        <ProductCard>
+          <ProductImage src={FEimg} alt="Product 3" />
+          <ProductTitle>Product 3</ProductTitle>
+          <ProductPrice>$32.99</ProductPrice>
+          <HeroButton>Shop Now</HeroButton>
+        </ProductCard>
+        <ProductCard>
+          <ProductImage src={img5} alt="Product 3" />
+          <ProductTitle>Product 3</ProductTitle>
+          <ProductPrice>$38.99</ProductPrice>
+          <HeroButton>Shop Now</HeroButton>
+        </ProductCard>
+        <ProductCard>
+          <ProductImage src={img6} alt="Product 3" />
+          <ProductTitle>Product 3</ProductTitle>
+          <ProductPrice>$45.99</ProductPrice>
           <HeroButton>Shop Now</HeroButton>
         </ProductCard>
       </ProductSection>
