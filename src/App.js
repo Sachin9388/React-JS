@@ -18,6 +18,7 @@ import ClassCompoMenu from './Components/ClassComponent/ClassCompoMenu';
 import ClassCompoIntro from './Components/ClassComponent/ClassCompoIntro';
 import ClassCompoJSX from './Components/ClassComponent/ClassCompoJSX';
 import Props from './Components/ClassComponent/Props';
+import ClassCompoConstructor from './Components/ClassComponent/ClassCompoConstructor';
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
 import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
 import StyledComponent from './Components/FunctionalComponent/StyledComponent';
@@ -100,6 +101,10 @@ const app = createBrowserRouter([
               {
                 path:"props",
                 element:<Props/>,
+              },
+              {
+                path:"classcompoconstructor",
+                element:<ClassCompoConstructor/>,
               },
             ] 
           },

@@ -17,7 +17,7 @@ export default class ClassCompoMenu extends Component {
             <Link to="props"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo Props</MDBBtn></Link>
           </li>
           <li className='d-block'>
-            <Link to="props"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo Props</MDBBtn></Link>
+            <Link to="classcompoconstructor"><MDBBtn outline rounded className='my-2' color='primary'>Constructor</MDBBtn></Link>
           </li>
         </ul>
         <Outlet />
