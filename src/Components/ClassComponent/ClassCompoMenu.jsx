@@ -5,17 +5,23 @@ import { Link, Outlet } from 'react-router-dom';
 export default class ClassCompoMenu extends Component {
   render() {
     return (
-       <>
-          <ul>
-            <li className='d-block'>
-              <Link to="classcompointro"><MDBBtn outline rounded  className='my-2' color='primary'> Class Compo Intro</MDBBtn></Link>
-              </li>
-            <li className='d-block'>
-              <Link to="classcompojsx"><MDBBtn outline rounded  className='my-2' color='primary'>JSX in Class Compo</MDBBtn></Link>
-              </li>
-          </ul>
-          <Outlet/>
-       </>
+      <>
+        <ul>
+          <li className='d-block'>
+            <Link to="classcompointro"><MDBBtn outline rounded className='my-2' color='primary'> Class Compo Intro</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="classcompojsx"><MDBBtn outline rounded className='my-2' color='primary'>JSX in Class Compo</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="props"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo Props</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="props"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo Props</MDBBtn></Link>
+          </li>
+        </ul>
+        <Outlet />
+      </>
     )
   }
 }

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import abstract from '../../Image/abstract-1278077_1280.webp'
 import analytics from '../../Image/analytics-3088958_1280.webp'
 import digital from '../../Image/digital-1742687_1280.webp'
-import FEimg from '../../Image/FE img.jpg'
-import img5 from '../../Image/img5.jpg'
-import img6 from '../../Image/img6.jpg'
+import Coding from '../../Image/Coding.jpg'
+import Frontend from '../../Image/FrontEnd.jpg'
+import WebDesign from '../../Image/WebDesign.jpg'
 
 const Container = styled.div`
   max-width: 1200px;
@@ -150,19 +150,19 @@ function StyledComponent(){
           <HeroButton>Shop Now</HeroButton>
         </ProductCard>
         <ProductCard>
-          <ProductImage src={FEimg} alt="Product 3" />
+          <ProductImage src={Coding} alt="Product 3" />
           <ProductTitle>Product 3</ProductTitle>
           <ProductPrice>$32.99</ProductPrice>
           <HeroButton>Shop Now</HeroButton>
         </ProductCard>
         <ProductCard>
-          <ProductImage src={img5} alt="Product 3" />
+          <ProductImage src={Frontend} alt="Product 3" />
           <ProductTitle>Product 3</ProductTitle>
           <ProductPrice>$38.99</ProductPrice>
           <HeroButton>Shop Now</HeroButton>
         </ProductCard>
         <ProductCard>
-          <ProductImage src={img6} alt="Product 3" />
+          <ProductImage src={WebDesign} alt="Product 3" />
           <ProductTitle>Product 3</ProductTitle>
           <ProductPrice>$45.99</ProductPrice>
           <HeroButton>Shop Now</HeroButton>
