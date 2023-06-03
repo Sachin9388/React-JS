@@ -25,6 +25,9 @@ export default class ClassCompoMenu extends Component {
           <li className='d-block'>
             <Link to="classcompostatelifecycle"><MDBBtn outline rounded className='my-2' color='primary'>State LifeCycle</MDBBtn></Link>
           </li>
+          <li className='d-block'>
+            <Link to="classcompostatelifecycleloader"><MDBBtn outline rounded className='my-2' color='primary'>State LifeCycle Loader</MDBBtn></Link>
+          </li>
         </ul>
         <Outlet />
       </>

@@ -24,6 +24,7 @@ import StateLifeCycle from './Components/ClassComponent/StateLifeCycle';
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
 import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
 import StyledComponent from './Components/FunctionalComponent/StyledComponent';
+import StateLifeCycleLoader from './Components/ClassComponent/StateLifeCycleLoader';
 // import ClassCompoRoute from './Components/ClassComponent/ClassCompoRoute';
 // import FunctionalCompoRoute  from './Components/FunctionalComponent/FunctionalCompoRoute';
 
@@ -114,7 +115,11 @@ const app = createBrowserRouter([
               },
               {
                 path:"classcompostatelifecycle",
-                element:<StateLifeCycle/>
+                element:<StateLifeCycle/>,
+              },
+              {
+                path:"classcompostatelifecycleloader",
+                element:<StateLifeCycleLoader/>,
               },
             ] 
           },
