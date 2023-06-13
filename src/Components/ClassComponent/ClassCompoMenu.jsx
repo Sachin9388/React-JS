@@ -23,10 +23,13 @@ export default class ClassCompoMenu extends Component {
             <Link to="classcompostate"><MDBBtn outline rounded className='my-2' color='primary'>State in Class compo</MDBBtn></Link>
           </li>
           <li className='d-block'>
-            <Link to="classcompostatelifecycle"><MDBBtn outline rounded className='my-2' color='primary'>State LifeCycle</MDBBtn></Link>
+            <Link to="classcompostatelifecycle"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo State LifeCycle</MDBBtn></Link>
           </li>
           <li className='d-block'>
-            <Link to="classcompostatelifecycleloader"><MDBBtn outline rounded className='my-2' color='primary'>State LifeCycle Loader</MDBBtn></Link>
+            <Link to="classcompostatelifecycleloader"><MDBBtn outline rounded className='my-2' color='primary'>Class Compo State LifeCycle Loader</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="logandreg"><MDBBtn outline rounded className='my-2' color='primary'>Log And Reg Form</MDBBtn></Link>
           </li>
         </ul>
         <Outlet />

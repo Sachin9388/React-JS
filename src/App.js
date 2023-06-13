@@ -21,6 +21,7 @@ import Props from './Components/ClassComponent/Props';
 import ClassCompoConstructor from './Components/ClassComponent/ClassCompoConstructor';
 import ClassCompoState from './Components/ClassComponent/ClassCompoState';
 import StateLifeCycle from './Components/ClassComponent/StateLifeCycle';
+import LogAndReg from './Components/ClassComponent/LogAndReg';
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
 import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
 import StyledComponent from './Components/FunctionalComponent/StyledComponent';
@@ -120,6 +121,10 @@ const app = createBrowserRouter([
               {
                 path:"classcompostatelifecycleloader",
                 element:<StateLifeCycleLoader/>,
+              },
+              {
+                path:"logandreg",
+                element:<LogAndReg/>,
               },
             ] 
           },
