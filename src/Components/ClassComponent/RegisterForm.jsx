@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import loginImg from '../../Image/loginimg.svg'
+// import loginImg from '../../Image/loginimg.svg'
+import Frontend from '../../Image/FrontEnd.jpg'
+
 
 
 export default class RegisterForm extends Component {
@@ -13,7 +15,7 @@ export default class RegisterForm extends Component {
           <div className="header">Register</div>
           <div className="content">
             <div className="image">
-              <img src={loginImg} />
+              <img src={Frontend} />
             </div>
             <div className="form">
               <div className="form-group">
