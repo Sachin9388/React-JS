@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Propscard from './Propscard'
-import PropscardData from './PropscardData'
+import Propscard from './03Propscard'
+import PropscardData from './03PropscardData'
 
 export default class Props extends Component {
     render() {

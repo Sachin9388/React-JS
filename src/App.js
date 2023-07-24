@@ -15,19 +15,25 @@ import BtnLeft from './ComComponent/BtnLeft';
 import BtnMid from './ComComponent/BtnMid';
 import BtnRight from './ComComponent/BtnRight';
 import ClassCompoMenu from './Components/ClassComponent/ClassCompoMenu';
-import ClassCompoIntro from './Components/ClassComponent/ClassCompoIntro';
-import ClassCompoJSX from './Components/ClassComponent/ClassCompoJSX';
-import Props from './Components/ClassComponent/Props';
-import ClassCompoConstructor from './Components/ClassComponent/ClassCompoConstructor';
-import ClassCompoState from './Components/ClassComponent/ClassCompoState';
-import StateLifeCycle from './Components/ClassComponent/StateLifeCycle';
-import ConditionalRendering from './Components/ClassComponent/ConditionalRendering';
+
+
+import ClassCompoIntro from './Components/ClassComponent/01ClassCompoIntro';
+import ClassCompoJSX from './Components/ClassComponent/02ClassCompoJSX';
+import Props from './Components/ClassComponent/03Props';
+import ClassCompoConstructor from './Components/ClassComponent/01ClassCompoConstructor';
+import ClassCompoState from './Components/ClassComponent/04ClassCompoState';
+import StateLifeCycle from './Components/ClassComponent/05StateLifeCycle';
+import StateLifeCycleLoader from './Components/ClassComponent/05StateLifeCycleLoader';
+import ConditionalRendering from './Components/ClassComponent/06ConditionalRendering';
 import LogAndReg from './Components/ClassComponent/LogAndReg';
+import ListKeys from './Components/ClassComponent/07ListKeys';
+import ControlledCompo from './Components/ClassComponent/08ControlledCompo';
+
+
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
 import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
 import StyledComponent from './Components/FunctionalComponent/StyledComponent';
-import StateLifeCycleLoader from './Components/ClassComponent/StateLifeCycleLoader';
-import ListKeys from './Components/ClassComponent/ListKeys';
+
 // import ClassCompoRoute from './Components/ClassComponent/ClassCompoRoute';
 // import FunctionalCompoRoute  from './Components/FunctionalComponent/FunctionalCompoRoute';
 
@@ -135,6 +141,10 @@ const app = createBrowserRouter([
               {
                 path:"classcompolistandkeys",
                 element:<ListKeys/>,
+              },
+              {
+                path:"classcontrolledcompo",
+                element:<ControlledCompo/>,
               },
             ] 
           },

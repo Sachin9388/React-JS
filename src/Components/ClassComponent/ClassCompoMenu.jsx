@@ -37,6 +37,9 @@ export default class ClassCompoMenu extends Component {
           <li className='d-block'>
             <Link to="classcompolistandkeys"><MDBBtn outline rounded className='my-2' color='primary'>ListKeys</MDBBtn></Link>
           </li>
+          <li className='d-block'>
+            <Link to="classcontrolledcompo"><MDBBtn outline rounded className='my-2' color='primary'>Controlled Compo</MDBBtn></Link>
+          </li>
         </ul>
         <Outlet />
       </>
