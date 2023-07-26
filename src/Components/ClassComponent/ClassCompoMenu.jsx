@@ -40,6 +40,21 @@ export default class ClassCompoMenu extends Component {
           <li className='d-block'>
             <Link to="classcontrolledcompo"><MDBBtn outline rounded className='my-2' color='primary'>Controlled Compo</MDBBtn></Link>
           </li>
+          <li className='d-block'>
+            <Link to="classuncontrolledcompo"><MDBBtn outline rounded className='my-2' color='primary'>Uncontrolled Compo</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="classcompositionvsinheritance"><MDBBtn outline rounded className='my-2' color='primary'>Composition Vs Inheritance</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="classcompostatelifting"><MDBBtn outline rounded className='my-2' color='primary'>State Lifting</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="classcompoarray"><MDBBtn outline rounded className='my-2' color='primary'>Array Acces</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="classcompoapiexample"><MDBBtn outline rounded className='my-2' color='primary'>Api Example</MDBBtn></Link>
+          </li>
         </ul>
         <Outlet />
       </>

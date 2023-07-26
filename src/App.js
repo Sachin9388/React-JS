@@ -28,7 +28,11 @@ import ConditionalRendering from './Components/ClassComponent/06ConditionalRende
 import LogAndReg from './Components/ClassComponent/LogAndReg';
 import ListKeys from './Components/ClassComponent/07ListKeys';
 import ControlledCompo from './Components/ClassComponent/08ControlledCompo';
-
+import UncontrolledCompo from './Components/ClassComponent/09UncontrolledCompo';
+import CompositionVsInheritance from './Components/ClassComponent/10CompositionVsInheritance';
+import StateLifting from './Components/ClassComponent/11StateLifting';
+import Array from './Components/ClassComponent/12Array';
+import ApiExample from './Components/ClassComponent/13ApiExample';
 
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
 import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
@@ -145,6 +149,26 @@ const app = createBrowserRouter([
               {
                 path:"classcontrolledcompo",
                 element:<ControlledCompo/>,
+              },
+              {
+                path:"classuncontrolledcompo",
+                element:<UncontrolledCompo/>,
+              },
+              {
+                path:"classcompositionvsinheritance",
+                element:<CompositionVsInheritance/>,
+              },
+              {
+                path:"classcompostatelifting",
+                element:<StateLifting/>,
+              },
+              {
+                path:"classcompoarray",
+                element:<Array/>,
+              },
+              {
+                path:"classcompoapiexample",
+                element:<ApiExample/>,
               },
             ] 
           },
