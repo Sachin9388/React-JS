@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import {
     MDBContainer,
     MDBNavbar,
@@ -9,15 +9,15 @@ import {
     MDBNavbarLink,
     MDBIcon,
     MDBCollapse
-  } from 'mdb-react-ui-kit';
-  import { Link, Outlet } from "react-router-dom";
-  
-  export default function Header() {
+} from 'mdb-react-ui-kit';
+import { Link, Outlet } from "react-router-dom";
+
+export default function Header() {
     const [showNav, setShowNav] = useState(false);
-  
+
     return (
         <>
-                  <MDBNavbar expand='lg' dark bgColor='dark'>
+            <MDBNavbar expand='lg' dark bgColor='dark'>
                 <MDBContainer fluid>
                     <MDBNavbarBrand href='#'>SACHIN</MDBNavbarBrand>
                     <MDBNavbarToggler
@@ -26,7 +26,7 @@ import {
                         aria-controls='navbarColor02'
                         aria-expanded='false'
                         aria-label='Toggle navigation'
-                        // onClick={() => setShowNavColorSecond(!showNavColorSecond)}
+                    // onClick={() => setShowNavColorSecond(!showNavColorSecond)}
                     >
                         <MDBIcon icon='bars' fas />
                     </MDBNavbarToggler>
@@ -57,7 +57,7 @@ import {
                     </MDBCollapse>
                 </MDBContainer>
             </MDBNavbar>
-            <Outlet/>
-      </>
+            <Outlet />
+        </>
     );
-  }
+}

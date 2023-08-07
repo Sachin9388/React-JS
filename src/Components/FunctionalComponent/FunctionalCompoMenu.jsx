@@ -13,6 +13,9 @@ export default class FunctionalCompoMenu extends Component {
                 <Link to="functionalcompointro"><MDBBtn outline rounded className='my-2' color='primary'>Functional Compo Intro</MDBBtn></Link>
             </li>
             <li className='d-block'>
+                <Link to="functionalcompousestatehook"><MDBBtn outline rounded className='my-2' color='primary'>UseState</MDBBtn></Link>
+            </li>
+            <li className='d-block'>
                 <Link to="styledcomponent"><MDBBtn outline rounded className='my-2' color='primary'>Styled Component</MDBBtn></Link>
             </li>
         </ul>

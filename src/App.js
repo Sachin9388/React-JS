@@ -7,7 +7,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Header from "./ComComponent/Header";
 import HomePage from "./HomePage";
 import Feature from "./Feature";
-import ConatctPage from "./ContactPage";
+import ContactPage from "./ContactPage";
 import AboutPage from "./AboutPage";
 import Examples from "./Examples";
 import BtnGroup from './ComComponent/BtnGroup';
@@ -33,10 +33,17 @@ import CompositionVsInheritance from './Components/ClassComponent/10CompositionV
 import StateLifting from './Components/ClassComponent/11StateLifting';
 import Array from './Components/ClassComponent/12Array';
 import ApiExample from './Components/ClassComponent/13ApiExample';
+import CssExample from './Components/ClassComponent/14CssExample';
+import DynamicSubmenu from './Components/ClassComponent/15DynamicSubmenu';
+import SpreadandRest from './Components/ClassComponent/16SpreadandRest';
+import Hocmain from './Components/ClassComponent/17Hocmain'
+import Task from './Components/ClassComponent/18Task'
+import CheckList from './Components/ClassComponent/CheckList';
 
 import FunctionalCompoMenu from './Components/FunctionalComponent/FunctionalCompoMenu';
-import FunctionalCompoIntro from './Components/FunctionalComponent/FunctionalCompoIntro';
+import FunctionalCompoIntro from './Components/FunctionalComponent/01FunctionalCompoIntro';
 import StyledComponent from './Components/FunctionalComponent/StyledComponent';
+import UsestateHook from './Components/FunctionalComponent/02UsestateHook';
 
 // import ClassCompoRoute from './Components/ClassComponent/ClassCompoRoute';
 // import FunctionalCompoRoute  from './Components/FunctionalComponent/FunctionalCompoRoute';
@@ -46,143 +53,171 @@ import StyledComponent from './Components/FunctionalComponent/StyledComponent';
 
 const app = createBrowserRouter([
   {
-    path:"/",
-    element:<Header/>,
-    children:[
+    path: "/",
+    element: <Header />,
+    children: [
       {
         // path:"/home",
-        index : true ,
-        element:<HomePage/>,
+        index: true,
+        element: <HomePage />,
       },
       {
-        path:"/about",
-        element:<AboutPage/>,
-        children:[
-        {
-          path:"btngroup",
-          element:<BtnGroup/>,   
-        },
-        {
-          path:"/about/btnleft",
-          element:<BtnLeft/>,
-        },
-        {
-          path:"/about/btnmid",
-          element:<BtnMid/>,
-        },       
-        {
-          path:"/about/btnright",
-          element:<BtnRight/>,
-          children:[
-            {
-              path:"/about/btnright/btnleft",
-              element:<BtnLeft/>,
-            },
-            {
-              path:"/about/btnright/btnmid",
-              element:<BtnMid/>,
-            },
-            {
-              path:"/about/btnright/btnright",
-              element:<BtnRight/>,
-            },
-          ]
-        },
-     ]
-   },
-      {
-        path:"/contact",
-        element:<ConatctPage/>,
-      },
-      {
-        path:"/feature",
-        element:<Feature/>,
-      },
-      {
-        path:"/examples",
-        element:<Examples/>,
-        children:[
+        path: "/about",
+        element: <AboutPage />,
+        children: [
           {
-            path:"classcomponent/*",
-            element:<ClassCompoMenu/>,
-            children:[
+            path: "btngroup",
+            element: <BtnGroup />,
+          },
+          {
+            path: "/about/btnleft",
+            element: <BtnLeft />,
+          },
+          {
+            path: "/about/btnmid",
+            element: <BtnMid />,
+          },
+          {
+            path: "/about/btnright",
+            element: <BtnRight />,
+            children: [
               {
-                path:"classcompointro",
-                element:<ClassCompoIntro/>,
+                path: "/about/btnright/btnleft",
+                element: <BtnLeft />,
               },
               {
-                path:"classcompojsx",
-                element:<ClassCompoJSX/>,
+                path: "/about/btnright/btnmid",
+                element: <BtnMid />,
               },
               {
-                path:"props",
-                element:<Props/>,
+                path: "/about/btnright/btnright",
+                element: <BtnRight />,
+              },
+            ]
+          },
+        ]
+      },
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
+      {
+        path: "/feature",
+        element: <Feature />,
+      },
+      {
+        path: "/examples",
+        element: <Examples />,
+        children: [
+          {
+            path: "classcomponent/*",
+            element: <ClassCompoMenu />,
+            children: [
+              {
+                path: "classcompointro",
+                element: <ClassCompoIntro />,
               },
               {
-                path:"classcompoconstructor",
-                element:<ClassCompoConstructor/>,
+                path: "classcompojsx",
+                element: <ClassCompoJSX />,
               },
               {
-                path:"classcompostate",
-                element:<ClassCompoState/>,
+                path: "props",
+                element: <Props />,
               },
               {
-                path:"classcompostatelifecycle",
-                element:<StateLifeCycle/>,
+                path: "classcompoconstructor",
+                element: <ClassCompoConstructor />,
               },
               {
-                path:"classcompostatelifecycleloader",
-                element:<StateLifeCycleLoader/>,
+                path: "classcompostate",
+                element: <ClassCompoState />,
               },
               {
-                path:"logandreg",
-                element:<LogAndReg/>,
+                path: "classcompostatelifecycle",
+                element: <StateLifeCycle />,
               },
               {
-                path:"classcompoconditionalrendering",
-                element:<ConditionalRendering/>,
+                path: "classcompostatelifecycleloader",
+                element: <StateLifeCycleLoader />,
               },
               {
-                path:"classcompolistandkeys",
-                element:<ListKeys/>,
+                path: "logandreg",
+                element: <LogAndReg />,
               },
               {
-                path:"classcontrolledcompo",
-                element:<ControlledCompo/>,
+                path: "classcompoconditionalrendering",
+                element: <ConditionalRendering />,
               },
               {
-                path:"classuncontrolledcompo",
-                element:<UncontrolledCompo/>,
+                path: "classcompolistandkeys",
+                element: <ListKeys />,
               },
               {
-                path:"classcompositionvsinheritance",
-                element:<CompositionVsInheritance/>,
+                path: "classcontrolledcompo",
+                element: <ControlledCompo />,
               },
               {
-                path:"classcompostatelifting",
-                element:<StateLifting/>,
+                path: "classuncontrolledcompo",
+                element: <UncontrolledCompo />,
               },
               {
-                path:"classcompoarray",
-                element:<Array/>,
+                path: "classcompositionvsinheritance",
+                element: <CompositionVsInheritance />,
               },
               {
-                path:"classcompoapiexample",
-                element:<ApiExample/>,
+                path: "classcompostatelifting",
+                element: <StateLifting />,
               },
-            ] 
+              {
+                path: "classcompoarray",
+                element: <Array />,
+              },
+              {
+                path: "classcompoapiexample",
+                element: <ApiExample />,
+              },
+              {
+                path: "cssexample",
+                element: <CssExample />,
+              },
+              {
+                path: "dynamicsubmenu",
+                element: <DynamicSubmenu />,
+              },
+              {
+                path: "spreadandrest",
+                element: <SpreadandRest />,
+              },
+              {
+                path: "hoc",
+                element: <Hocmain />,
+              },
+              {
+                path: "task",
+                element: <Task />,
+              },
+              {
+                path: "checklist",
+                element: <CheckList/>,
+              },
+            ]
           },
           {
             path: "functionalcomponent/*",
-            element:<FunctionalCompoMenu/>,
-            children:[
+            element: <FunctionalCompoMenu />,
+            children: [
               {
-                path:"functionalcompointro",
-                element:<FunctionalCompoIntro/>, 
+                path: "functionalcompointro",
+                element: <FunctionalCompoIntro />,
               },
               {
-                path:"styledcomponent",
-                element:<StyledComponent/>,
+                path: "functionalcompousestatehook",
+                element: <UsestateHook />,
+              },
+              {
+                path: "styledcomponent",
+                element: <StyledComponent />,
               },
             ]
           },

@@ -55,6 +55,24 @@ export default class ClassCompoMenu extends Component {
           <li className='d-block'>
             <Link to="classcompoapiexample"><MDBBtn outline rounded className='my-2' color='primary'>Api Example</MDBBtn></Link>
           </li>
+          <li className='d-block'>
+            <Link to="cssexample"><MDBBtn outline rounded className='my-2' color='primary'>CSS Example</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="dynamicsubmenu"><MDBBtn outline rounded className='my-2' color='primary'>Dynamic SubMenu</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="spreadandrest"><MDBBtn outline rounded className='my-2' color='primary'>Spread And Rest</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="hoc"><MDBBtn outline rounded className='my-2' color='primary'>HOC</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="task"><MDBBtn outline rounded className='my-2' color='primary'>Task</MDBBtn></Link>
+          </li>
+          <li className='d-block'>
+            <Link to="checklist"><MDBBtn outline rounded className='my-2' color='primary'>CheckList</MDBBtn></Link>
+          </li>
         </ul>
         <Outlet />
       </>
